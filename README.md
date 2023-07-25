@@ -1,2 +1,2 @@
-# traditional line company website in progressd
+# traditional line company website in progress
 
