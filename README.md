@@ -1,3 +1,3 @@
-# traditional line company website in progress!!!
+# Traditional Line company website in progress!
 
 
