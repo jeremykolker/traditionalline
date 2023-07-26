@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import '/Users/jeremykolker/dev/Ollivanders/mld/src/index.css';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
 import heroImg from '/Users/jeremykolker/dev/Ollivanders/mld/src/images/Screenshot 2023-07-24 at 2.27.10 PM.png';
 import img1 from '/Users/jeremykolker/dev/Ollivanders/mld/src/images/Daklota-13.jpg'
+import '/Users/jeremykolker/dev/Ollivanders/mld/src/index.css'
 
 const Hero = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,9 +24,11 @@ const Hero = () => {
 
   return (
     <>
+     
       <div className="hero" id="hero">
         <div>
           <NavBar />
+
         </div>
 
         <img
@@ -33,23 +37,24 @@ const Hero = () => {
                   src={img1}
                  
                 />
-
+<div className='line'></div>
         <div
+ 
           className={`m-auto overflow-hidden mx-4 mt-8 lg:mt-4 p-2 md:p-12 h-5/6 ${
             shouldMoveImageToTop ? 'flex-col items-center' : 'flex'
           }`}
           data-aos="zoom-in"
         >
-          <div className="flex flex-col lg:flex-row py-8 justify-between text-center lg:text-left">
+          <div className="flex flex-col lg:flex-row py-8 justify-betwezen text-center lg:text-left">
             <div className={`lg:w-1/2 flex flex-col justify-center ${shouldMoveImageToTop ? 'mb-4' : ''}`} data-aos="zoom-in" data-aos-delay="200">
-              <h1 className="mb-5 text-3xl font-bold text-blue-900">
+              <h1 className="mb-5 text-3xl font-bold uppercase  text-blue-900">
                 Architectural Restoration
               </h1>
-              <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">
-                High-Quality General Contracting: delivering masterful construction services throughout the New York City Area.
+              <div className="text-2xl tracking-tight mb-5 text-gray-600">
+                High-quality general contracting: delivering masterful construction services throughout the New York metropolitan area.
               </div>
-              <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
+              <div className=" mt-3 ">
+                <Link to="/#portfolio" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
                   Learn more
                 </Link>
               </div>

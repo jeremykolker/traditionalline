@@ -1,14 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Dai+Banna+SIL:wght@300&family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  background: linear-gradient(to right, #be996d, #d3b289, #be996d);
+  font-family: 'Nanum', Gothic;
+  border-style: solid;
+  border-radius: 1px;
+  /* background-color: #d3b289; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
 }
 
+.title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+
+}
+
+  .line {
+    width: 200%;
+    opacity: 10%;
+    height: 1px; /* Adjust the height to control the thickness of the line */
+    background-color: black; /* Adjust the color to change the line color */ }
+  
+
+
+.line2 {
+  border-radius: 3px;
+  border-style: solid;
+  border-style: solid;
+    width: 200%;
+    opacity: 20%;
+border-color: black;
+    height: 3px; /* Adjust the height to control the thickness of the line */
+    background-color: rgb(0, 42, 255); /* Adjust the color to change the line color */ 
+}
+  
+.NavBar{
+  background: linear-gradient(to right, #be996d, #ded1b1, #be996d);
+}
 .hero {
   background: url(./images/hero-bg.svg) top center no-repeat;
   background-size: cover;
@@ -21,6 +59,10 @@ body {
 
 .cta {
   background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed center center;
+}
+
+.services {
+  background: linear-gradient(to right, #be996d, #ded1b1, #be996d);
 }
 
 

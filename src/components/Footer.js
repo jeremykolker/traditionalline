@@ -1,20 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import '/Users/jeremykolker/dev/Ollivanders/mld/src/index.css'
 
 const Footer = () => {
     return (
         <>
             <footer>
-                <div className="footer max-w-full mx-auto px-4 sm:px-6 bg-gray-100 border-t border-b py-30">
+                <div className="footer">
+                <div className='line2'></div>
 
                     {/* Top area: Blocks */}
-                    <div className="grid sm:grid-cols-12 gap-5 py-8 md:py-12 border-t border-gray-200 lg:ml-11">
+                    <div className="grid sm:grid-cols-12 gap-5 py-2 md:py-12q  border-black-200 lg:ml-11">
 
                     {/* 1st block */}
                     <div className="col-span-12 lg:col-span-4">
-                        <div className="box-border border-b-4 border-blue-900 p-8 bg-gray-200 text-gray-600 text-center rounded-lg xl:w-80 mx-auto">
-                            <h3 className="font-bold text-4xl mb-4">Traditional Line</h3>
+                        <div className="box-border border-b-4 border-blue-900 p-6 bg-gray-200 text-gray-600 text-center rounded-lg xl:w-80 mx-auto">
+                            <h3 className="font-bold text-4xl uppercase mb-4">Traditional Line</h3>
                             <div className='text-md font-medium text-gray-600'>
                                 <h5>General Contractor & Construction</h5>
                                 <p>143 West 21st Street</p>
@@ -26,7 +28,7 @@ const Footer = () => {
 
                     {/* 2nd block */}
                     <div className="col-span-12 md:col-span-6 lg:col-span-4 mx-auto text-center">
-                    <h6 className="text-[#013289] text-xl mb-4">OUR SERVICES</h6>
+                    <h6 className="text-[#013289] text-xl mb-2">OUR SERVICES</h6>
                         <ul className="text-sm">
                         <li className="mb-2">
                           Historic Restoration
@@ -43,7 +45,7 @@ const Footer = () => {
                         <li className="mb-2">
                            Art Services
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-0">
                         Full-Service Rennovations
                         </li>
                         </ul>
@@ -55,7 +57,7 @@ const Footer = () => {
                    
                     <div className="col-span-12 text-left mx-auto lg:col-span-3 font-bold uppercase text-black-900">
                     
-                        <h6 className="text-[#013289] text-xl  text-center font-bold mb-4">LINKS</h6>
+                        <h6 className="text-[#013289] text-xl  text-center font-bold mb-1">LINKS</h6>
                         <ul className="text-md text-center">
                     
 
@@ -65,11 +67,12 @@ const Footer = () => {
                 About
             </HashLink>
             </li>
-           <li className="mb-2"> <HashLink className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out" to="/#portfolio">
+            <li className="mb-2"> <HashLink className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out" to="/#portfolio">
                 Portfolio
             </HashLink></li>
-           <li className="mb-2"> <HashLink className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out" to="/contact">
-                Contact Us
+         
+           <li className="mb-0"> <HashLink className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out" to="/contact">
+                Contact 
             </HashLink>
             </li>
             </ul>

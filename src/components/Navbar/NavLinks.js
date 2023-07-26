@@ -5,16 +5,18 @@ import { HashLink } from 'react-router-hash-link';
 const NavLinks = () => {
     return (
         <>
-            <HashLink className="px-4 font-extrabold text-gray-500 hover:text-blue-900" smooth to="/#about">
+        <div className='mr-20'>
+            <HashLink className="text-xl px-4 font-extrabold font-xl text-gray-500 hover:text-blue-900" to="/#about">
                 About
             </HashLink>
-            <HashLink className="px-4 font-extrabold text-gray-500 hover:text-blue-900" smooth to="/#portfolio">
+            <HashLink className="text-xl px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/#portfolio">
                 Portfolio
             </HashLink>
-            <HashLink className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/contact">
-                Contact Us
+    
+            <HashLink className="text-xl px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/contact">
+                Contact 
             </HashLink>
-            
+            </div>
         </>
     )
 }

@@ -3,13 +3,17 @@ import img from '/Users/jeremykolker/dev/Ollivanders/mld/src/images/TL8.jpeg';
 
 
 
+
+
 const Services = () => {
 
     return (
-        <div id="services" className="bg-gray-100 py-12" >
+        
+        <div id="services" className="py-6" >
+            <div className='line'> </div>
              <section>
-                <div className="m-auto max-w-6xl p-2 md:p-12 h-5/6">
-                    <div className="flex flex-col-reverse lg:flex-row py-8 justify-between lg:text-left" data-aos="zoom-out">
+                <div className="mt-1 max-w-6xl p-2 md:p-12 h-5/6">
+                    <div className="flex flex-col-reverse lg:flex-row py-2 justify-between lg:text-left" data-aos="zoom-out">
                         <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
                             <div className='text-blue-900 mb-4'>
                             
@@ -22,7 +26,7 @@ const Services = () => {
                             <div className='text-blue-900 mb-4'>
                              
                             </div>
-                            <h3 className="text-3xl text-blue-900 font-bold my-3">Past Clients</h3>
+                            <h3 className="text-3xl text-blue-900 uppercase font-bold my-3">Past Clients</h3>
                             
                             <div className='w-45 border-b-4 border-blue-900'></div>
                      
@@ -34,8 +38,8 @@ const Services = () => {
       <li>Brooklyn Museum</li>
       <li>The Frick Museum</li>
       <li>Boston Museum of Fine Art</li>
-      <li>Columbia University</li>
-    </div>
+      <li>Columbia University</li></div>
+      
     <div className="w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
       <li>Gracie Mansion</li>
       <li>Grand Central Station</li>
@@ -45,12 +49,12 @@ const Services = () => {
     </div>
   </ul>
 </div>
-
                         </div>
                     </div>
                 </div>
             </section>
             <section data-aos="zoom-in-down">
+            <div className='line'> </div>
                     <div className="my-4 py-4">
                         <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">Our Services</h2>
                         
